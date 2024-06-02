@@ -1,13 +1,15 @@
 <?php
 
-    $conn = oci_connect("username", "password", "localhost/XE");
+    $user = "KEKW";
+    $pass = "system";
+    $host = "localhost/XE";
+    $conn = oci_connect($user, $pass, $host);
 
-    if(!$conn){
-        echo "Failed to connect to Oracle";
+    if($conn){
+        echo "Connected to Oracle database";
     }
     else{
-        echo "Sucessfully connected to Oracle";
+        echo "Something went wrong";
     }
-    
 
 ?>
