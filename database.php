@@ -2,7 +2,7 @@
 
     $user = "KEKW";
     $pass = "system";
-    $host = "localhost/XE";
+    $host = "localhost/xe";
     $conn = oci_connect($user, $pass, $host);
 
     if($conn){
